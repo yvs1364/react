@@ -15,3 +15,19 @@ vérifier la présence d'un {children } afficher le {children} si il y en a un,
 Le state:
 sert a récupéré les paramètre d'une variable et si on change ces paramètre
 à les mettres a jour dans tout les endroit ou le paramètre et appelé
+
+pour enregistrer les changement en localStorage:
+
+componentDidMount () {
+  const text = localStorage.getItem("text")
+  if (text) {
+    this.setState({ text })
+  }else{
+    this.setState({ text: sampleText })
+  }
+}
+componentDidUpdate () {
+  const {text} = this.state
+  // or const text = this.state.text
+  localStorage.setItem("text", text)
+}
