@@ -16,12 +16,27 @@ body, .box > *, textarea, input {
 html {
   box-sizing: border-box;
 }
-
+.title{
+	font-family: fuji;
+	text-align: center;
+	background-color: #2196F3;
+	color: white;
+	margin-bottom: -25px;
+	border-radius: 12px 12px 0px 0px;
+}
 body {
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
 }
+.cadre{
+	padding: 100px;
+  /* border: 5px solid black; */
+	background-color: white;
+	box-shadow: 3px 6px 12px 4px rgba(0, 0, 255, 0.3);
+	border-radius: 12px
+}
+
 .connexionBox {
 	background-color: #eceff1;
 	display: flex;
@@ -35,6 +50,8 @@ body {
 }
 .connexion > * {
 	width: 100%;
+	/* border: 2px solid #2196F3; */
+	background-color: #ECEFF1;
 }
 .connexion > input {
 	box-sizing: border-box;
@@ -56,7 +73,11 @@ body {
 	padding: 50px 0;
 	/*border: 5px solid purple;*/
 }
-
+.boxdesign{
+	height: 88%;
+	border-radius: 0px 0px 12px 12px ;
+	box-shadow: 3px 6px 12px 4px rgba(0, 0, 255, 0.2);
+}
 .box > * {
 	width: 100%;
 }
@@ -78,7 +99,7 @@ body {
 .messages::-webkit-scrollbar {
     width: 0.4em;
 }
- 
+
 .messages::-webkit-scrollbar-thumb {
   background-color: #eceff1;
 }
@@ -94,9 +115,9 @@ body {
 }
 
 .message > * {
-	padding: 5px 10px;
+	padding: 5px 8px;
 	max-width: 75%;
-	border-radius: 2px;
+	border-radius: 7px;
 	margin: 10px 0;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -106,6 +127,7 @@ body {
 	background-color: #eceff1;
 	align-self: flex-start;
 	position: relative;
+	margin-left: 2px;
 }
 
 .not-user-message:after {
@@ -152,8 +174,8 @@ body {
 textarea {
 	box-sizing: border-box;
 	height: 120px;
-	border: 5px solid #2196F3;
-	border-width: 0 0 5px 0;
+	border:2px solid #2196F3;
+	border-width: 1px 1px 1px 2px 0;
 	background-color: #ECEFF1;
 	outline: none;
 	font-size: 20px;
@@ -169,11 +191,11 @@ button {
 	font-size: 20px;
 	border: none;
 	color: white;
-	background-color: #2196F3;
+	background-color: #2196F3 !important;
 	margin-top: 10px;
 	padding: 10px;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: 12px;
 }
 
 button:disabled {
@@ -194,4 +216,3 @@ button:disabled {
 	margin: 0;
 	background: #eceff1;
 }
-
